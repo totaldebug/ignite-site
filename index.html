@@ -19,26 +19,11 @@ layout: default
       <p class="hero-note">Cost &amp; service logging is free forever. No ads, ever.</p>
     </div>
 
-    <div class="phone" aria-hidden="true">
-      <div class="stat">
-        <div class="label">Cost / mile</div>
-        <div class="value accent">14.2p</div>
-      </div>
-      <div class="stat">
-        <div class="label">Avg MPG · 6 mo</div>
-        <div class="value">48.6</div>
-      </div>
-      <div class="stat" style="flex:1">
-        <div class="label">Monthly spend</div>
-        <div class="bars">
-          <span style="height:40%"></span>
-          <span style="height:65%"></span>
-          <span style="height:52%"></span>
-          <span style="height:80%"></span>
-          <span style="height:58%"></span>
-          <span style="height:72%"></span>
-        </div>
-      </div>
+    <div class="phone">
+      <img
+        src="{{ '/assets/img/screens/home.png' | relative_url }}"
+        alt="IGNITE dashboard: primary vehicle, nearby fuel prices, cost per mile and monthly spend"
+        width="280" height="624" loading="eager" decoding="async">
     </div>
   </div>
 </section>
@@ -80,6 +65,37 @@ layout: default
         <h3>Built UK-first</h3>
         <p>Pence per litre, MPG and miles by default. DVLA/DVSA reg lookup, MOT &amp; tax reminders, ULEZ-aware.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>See it in action</h2>
+      <p>Real screens from the app — dashboard, logging, analytics, history and your garage.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot">
+        <img src="{{ '/assets/img/screens/refuel.png' | relative_url }}"
+             alt="Log Fill-Up screen with fuel type, litres, price and live cost" loading="lazy" decoding="async">
+        <figcaption>Log a fill-up in seconds</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="{{ '/assets/img/screens/analytics.png' | relative_url }}"
+             alt="Analytics screen with performance score, radar and monthly spend bars" loading="lazy" decoding="async">
+        <figcaption>Performance score &amp; analytics</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="{{ '/assets/img/screens/history.png' | relative_url }}"
+             alt="History list of fill-ups with MPG-coded accent bars and price trend" loading="lazy" decoding="async">
+        <figcaption>Full history &amp; price trend</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="{{ '/assets/img/screens/garage.png' | relative_url }}"
+             alt="Garage screen with vehicle card, lifetime stats and true cost of ownership" loading="lazy" decoding="async">
+        <figcaption>Your garage &amp; true cost</figcaption>
+      </figure>
     </div>
   </div>
 </section>
