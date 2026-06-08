@@ -1,0 +1,32 @@
+title: IGNITE
+tagline: Fuel & Vehicle Intelligence
+description: >-
+  IGNITE is a fuel and vehicle tracking app for UK drivers — log refuels,
+  expenses and services, and see your true cost per mile. Cost tracking is
+  free forever, with no ads.
+url: https://ignite.totaldebug.uk
+lang: en-GB
+
+# /privacy.md -> /privacy/  (clean, extensionless URLs)
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Allowed on GitHub Pages; emits /sitemap.xml.
+plugins:
+  - jekyll-sitemap
+
+# Contact + store links surfaced in templates. Edit these in one place.
+contact_email: privacy@totaldebug.uk
+app_store_url: "#"
+play_store_url: "#"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
