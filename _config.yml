@@ -20,7 +20,7 @@ plugins:
   - jekyll-sitemap
 
 # Contact + store links surfaced in templates. Edit these in one place.
-contact_email: privacy@totaldebug.uk
+contact_email: support@totaldebug.uk
 app_store_url: "#"
 play_store_url: "#"
 
