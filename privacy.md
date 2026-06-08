@@ -3,10 +3,10 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 updated: 8 June 2026
-description: How IGNITE collects, stores and lets you delete your data. Offline by default, no ads, no third-party tracking.
+description: How IGNITE collects, stores and lets you delete your data. Offline by default, no ads, anonymous analytics you can switch off.
 ---
 
-**Effective date:** _[fill in on first publish]_
+**Effective date:** 8 June 2026
 {: .updated}
 
 **Data controller:** Total Debug, United Kingdom. **Contact:** [{{ site.contact_email }}](mailto:{{ site.contact_email }})
@@ -17,7 +17,7 @@ This page explains what IGNITE collects, why, where it's stored, and how to dele
 
 - **IGNITE works fully offline by default.** No account is required. Your refuels, expenses, services and vehicle records are stored only in the app's local database on your device.
 - **Cloud sync is opt-in.** Creating an IGNITE account and turning on Cloud sync (a Pro feature) uploads your records to our backend so they're available on your other devices.
-- **No advertising. No third-party analytics. No tracking pixels.** No data is sold or shared with advertisers, brokers or marketing platforms.
+- **No advertising. No data is ever sold or shared with advertisers, brokers or marketing platforms.** We use one privacy-preserving analytics tool (PostHog) to see which features are used and to catch broken flows — it is anonymous, EU-hosted, masks every text field and image, and you can switch it off in Settings (see §7).
 - **Camera and on-device OCR** (odometer, fuel pump, receipt scanning) run entirely on your device. The recognised text never leaves the phone unless you choose to save the result (with Cloud sync on).
 - **You can delete your account and every byte of cloud-side data at any time** — see [Delete your account]({{ '/delete-account/' | relative_url }}). The deletion is immediate.
 
@@ -73,7 +73,19 @@ If you submit a correction to a fuel station's listed price, the correction is u
 
 If you send feedback via the in-app form, the message text and your account identifier (if signed in) are uploaded to our feedback service. We use this to fix bugs and prioritise features. We do not respond unless you include contact details in the message.
 
-### 7. Permissions IGNITE asks for
+### 7. Usage analytics (PostHog)
+
+To understand which features are used and to find crashes and broken flows, IGNITE includes **PostHog** product analytics. This is the only third-party analytics in the app, and it is engineered to carry no personal data:
+
+- **Anonymous.** Events are keyed to a random per-install identifier. We never link them to your identity, so your email, account ID, registration plates, notes and location are **never** attached to analytics.
+- **What's recorded:** screen views and taps, plus a few named actions used for funnels — a refuel, expense, service or vehicle was added; a station price was flagged or submitted. Event details are limited to flags, categories and counts, never free text or identifiers.
+- **Session replay** is enabled with **every text input and image masked**, so odometer photos, receipts, registration plates and sign-in fields never leave your device.
+- **EU-hosted** for UK/EU data residency.
+- **You can turn it off.** Settings → "Share usage analytics" flips consent and is remembered across launches. Analytics is currently **on by default**.
+
+PostHog's own privacy policy applies to the data it processes — see [posthog.com/privacy](https://posthog.com/privacy).
+
+### 8. Permissions IGNITE asks for
 
 | Permission | Why | Data leaves device? |
 | --- | --- | --- |
@@ -84,7 +96,7 @@ If you send feedback via the in-app form, the message text and your account iden
 
 We do **not** ask for: contacts, microphone, background location, motion or calendar.
 
-### 8. Children
+### 9. Children
 
 IGNITE is not directed at children under 13. We do not knowingly collect data from anyone under the UK age of digital consent (13). If you believe a child has created an account, [contact us](mailto:{{ site.contact_email }}) and we will delete it.
 
@@ -94,6 +106,7 @@ IGNITE is not directed at children under 13. We do not knowingly collect data fr
 - **Cloud-synced data**: until you turn Cloud sync off (which removes it from the server) or delete your account (which removes everything).
 - **Lookup log rows**: 30 days.
 - **RevenueCat purchase history**: per RevenueCat's retention; we have no control over this.
+- **Analytics events (PostHog)**: per PostHog's retention; they contain no personal data and cannot be tied back to you.
 - **Auth records**: until you delete your account.
 
 ## How to delete your data
